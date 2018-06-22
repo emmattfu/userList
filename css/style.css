@@ -11,21 +11,63 @@ button {
     background-color: transparent;
 }
 
+body {
+    background-color: #00BFFF;
+}
+
+ol {
+    list-style: none;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-red {
+    color: red;
+}
+
 .container {
     max-width: 1500px;
     padding: 0 15px;
     margin: auto;
 }
 
-.user-info {
-    border: 2px solid #000000;
-    max-width: 300px;
-    padding: 10px;
-    margin: 5px;
-    position: relative;
+.show-button {
+    margin-top: 15px;
+    display: block;
 }
 
-.user-info .close-info {
+.user-info {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    max-width: 300px;
+    padding: 15px 10px;
+    margin: 5px;
+    position: relative;
+    width: 250px;
+}
+
+.user-info span + span {
+    margin-top: 5px;
+}
+
+.user-info .hide-info {
     position: absolute;
     right: 10px;
+}
+
+#user-list {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#user-list .user-name {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#user-list li + li {
+    margin-top: 10px;
 }
