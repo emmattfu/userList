@@ -39,10 +39,10 @@ btn.addEventListener('click', function (e) {
     });
 });
 
-
+const http1 = new Http();
 ul.addEventListener('click', function (e) {
     if (e.target.classList.contains('user-name')){
-        http.get('https://jsonplaceholder.typicode.com/users', function (err, res) {
+        http1.get('https://jsonplaceholder.typicode.com/users', function (err, res) {
             // переводим полученые данные в массив
             let userList = (JSON.parse(res));
             userList.forEach(function (user) {
